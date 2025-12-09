@@ -1,18 +1,23 @@
 <?php
 require __DIR__ . "/config/db.php";
 
+    session_start();
+
+    if(!isset($_SESSION['user_id'])) {
+        header("Location: login.html");
+        exit();
+    }
+
 $sql = "SELECT * FROM games ORDER BY date ASC";
 $result = $conn->query($sql);
 $matches = $result->fetch_all(MYSQLI_ASSOC);
+
+    $title = "Brasileirão";
+    $css = "brasileirao";
+    include 'header.php';
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Jogos do Brasileirão</title>
-</head>
-<body>
+
 
 <h1>Jogos do Brasileirão Série A</h1>
 
@@ -28,5 +33,4 @@ $matches = $result->fetch_all(MYSQLI_ASSOC);
 
 <a href="index.php">Voltar</a>
 
-</body>
-</html>
+<?php include 'footer.php';?>

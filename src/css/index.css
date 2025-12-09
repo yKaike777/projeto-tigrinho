@@ -1,0 +1,85 @@
+#ver-carteira{
+
+    height: 175px;
+    width: 175px;
+
+    border: 1px solid #aaafb0;
+    border-radius: 5px;
+    padding: 10px 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+#saldo{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.add-btn{
+    background-color: rgb(61, 184, 102);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.primary-btn{
+    background-color: rgb(184, 61, 173);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+.primary-btn:hover{
+    transform: translateY(-5px);
+    background-color: rgb(116, 35, 109);
+}
+.secondary-btn:hover{
+    background-color: #222831;
+    transform: translateY(-5px);
+}
+
+.secondary-btn{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #aaafb0;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+
+.link-sair{
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+main{
+    position: relative;
+    padding: 14px 28px;
+
+    min-height: 100dvh;
+}
+
+#banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 700px){
+    .site-header{ flex-direction: column; gap:12px; align-items: flex-start }
+    .site-header .nav{ width:100%; justify-content: flex-start; gap:10px }
+}

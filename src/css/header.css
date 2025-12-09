@@ -1,0 +1,54 @@
+.site-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 28px;
+    background: linear-gradient(90deg, rgba(20,23,28,0.95), rgba(14,16,20,0.95));
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    margin-bottom: 50px;
+}
+
+.site-header .logo{
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.site-header .nav{
+    display: flex;
+    gap: 18px;
+}
+
+.site-header .nav a{
+    color: #e6e6e6;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 120ms ease, transform 120ms ease;
+}
+.site-header .nav a:hover{
+    background-color: rgba(255,255,255,0.04);
+    transform: translateY(-3px);
+}
+
+.site-header .user-area{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.site-header .greeting{
+    color: #fff;
+    font-weight: 600;
+}
+
+.site-header .logout{
+    color: #fff;
+    background: rgba(184,61,173,1);
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.site-header .logout:hover{
+    background: rgb(116,35,109);
+}

@@ -1,0 +1,7 @@
+footer{
+    background: linear-gradient(90deg, rgba(20,23,28,0.95), rgba(14,16,20,0.95));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}

@@ -1,0 +1,112 @@
+main{
+    height: 100dvh;
+}
+
+body{
+    position: relative;
+    overflow-y: hidden;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    width: 100%;
+}
+
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 50%;
+    width: 30%;
+    padding: 25px;
+
+    display: none;
+
+    background-color: #080b0f;
+    border-radius: 15px;
+    border: 1px solid #aaafb0;
+
+    z-index: 1000;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #aaafb0;
+    color: white;
+    background-color: #0f151cbb;
+    border-radius: 5px;
+}
+
+#button-container{
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+
+    width: 200px;
+}
+
+#saldo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 250px;
+
+    border: 1px solid #aaafb0;
+    border-radius: 15px;
+
+    padding: 25px;
+    margin: 15px;
+
+    background-color: #080b0f;
+}
+
+.add-btn{
+    background-color: rgb(61, 184, 102);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.saque-btn{
+    background-color: rgb(184, 61, 61);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+#close-btn{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}

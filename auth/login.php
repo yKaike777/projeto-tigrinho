@@ -18,6 +18,7 @@
         if (password_verify($password, $user['password'])) {
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['username'] = $user['username'];
+            $_SESSION['balance'] = $user['balance'];
             
             header("location: ../index.php");
             exit();
