@@ -3,18 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/login.css">
     <title>TIGRINHO - Sign Up</title>
 </head>
 <body>
-    <h1>Sign Up</h1>
+    
 
     <form action="auth/signup.php" method="post">
-        <input type="text" name="username" id="username_id" placeholder="Usuário" required>
-        <input type="email" name="email" id="email_id" placeholder="Email" required>
-        <input type="password" name="password" id="password_id" placeholder="Senha" required>
+        <h1>Sign Up</h1>
+
+        <div id="input-container">
+            <div class="input">
+                <label for="username">Usuário: </label>
+                <input type="text" name="username" id="username_id" required>
+            </div>
+
+            <div class="input">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email_id" required>
+            </div>
+
+            <div class="input">
+                <label for="password">Senha: </label>
+                <input type="password" name="password" id="password_id" required>
+            </div>
+        </div>
+
+
+
+
+
+
+        
         <button type="submit">Cadastrar</button>
+        
+        <span>Já possui uma conta? <a href="login.html">Clique Aqui!</a></span>
     </form>
 
-    <span>Já possui uma conta? <a href="login.html">Clique Aqui!</a></span>
+    <div id="img"></div>
+
+    </div>
 </body>
 </html>
