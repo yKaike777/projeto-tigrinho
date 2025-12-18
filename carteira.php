@@ -18,8 +18,8 @@ include 'header.php';
         <h1>R$<?php echo $_SESSION['balance']; ?></h1>
 
         <div id="button-group">
-            <button class="add-btn" onclick="add_saldo()">Adicionar Saldo</button>
-            <button class="saque-btn" onclick="saque()">Sacar</button>
+            <button type="button" class="add-btn" onclick="add_saldo()">Adicionar Saldo</button>
+            <button type="button" class="saque-btn" onclick="sacar()">Sacar</button>
         </div>
     </div>
 </main>
@@ -49,8 +49,7 @@ include 'header.php';
         </div>
 
         <div id="button-container">
-            <button type="submit" class="add-btn" name="acao" value="add">Adicionar Saldo</button>
-            <button type="submit" class="saque-btn" name="acao" value="saque">Sacar</button>
+            <button type="submit" class="add-btn" id="confirm-btn" name="acao" value="add">Confirmar</button>
         </div>
     </form>
 </div>
